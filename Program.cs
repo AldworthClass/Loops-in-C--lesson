@@ -25,6 +25,9 @@ namespace Part_6___Loops
                 Console.WriteLine("10 - QUIT");
                 while (!Int32.TryParse(Console.ReadLine(), out choice))
                     Console.WriteLine("Invalid selection, try again.");
+
+                Console.WriteLine("");
+                Console.WriteLine("");
                 switch (choice)
                 {
                     case 1:
