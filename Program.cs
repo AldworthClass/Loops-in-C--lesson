@@ -168,11 +168,15 @@ namespace Part_6___Loops
                 Console.WriteLine("2 - Mecalleango");
                 Console.WriteLine("3 - Leonardo");
                 Console.WriteLine("4 - Raphael");
-                while (!Int32.TryParse(Console.ReadLine(), out selection))
+                while (!Int32.TryParse(Console.ReadLine(), out selection))//Verifies numeric input
                     Console.WriteLine("Invalid input, enter an integer:");
                 if (selection != 1)
-                    Console.WriteLine("Good choice but no.");
-            } while (selection != 1);
+                {
+                    Console.WriteLine("Try again");
+                    Console.WriteLine("");
+                }
+
+            } while (selection != 1);//Only ends when user chooses
             Console.WriteLine("Wise choice my friend.");
         }
 
@@ -180,8 +184,9 @@ namespace Part_6___Loops
         {
             int age;
             Console.WriteLine("Please enter your age:");
-            while (Int32.TryParse(Console.ReadLine(), out age) && age > 0)
+            while (!Int32.TryParse(Console.ReadLine(), out age) || age <= 0)
                 Console.WriteLine("Invalid age, try again:");
+            Console.WriteLine("Thanks");
         }
 
     }
