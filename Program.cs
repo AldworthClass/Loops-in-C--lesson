@@ -188,6 +188,5 @@ namespace Part_6___Loops
                 Console.WriteLine("Invalid age, try again:");
             Console.WriteLine("Thanks");
         }
-
     }
 }
