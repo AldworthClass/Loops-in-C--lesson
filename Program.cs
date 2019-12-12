@@ -12,6 +12,7 @@ namespace Part_6___Loops
         static void Main(string[] args)
         {
             int choice;
+            //Displays the menu with error checking
             do {
                 Console.WriteLine("Loop Practice Solutions");
                 Console.WriteLine("");
@@ -22,6 +23,8 @@ namespace Part_6___Loops
                 Console.WriteLine("4 - For Loop Question 4");
                 Console.WriteLine("5 - For Loop Question 5");
                 Console.WriteLine("6 - For Loop Question 6");
+                Console.WriteLine("7 - While Loop Question 1");
+                Console.WriteLine("8 - While Loop Question 2");
                 Console.WriteLine("10 - QUIT");
                 while (!Int32.TryParse(Console.ReadLine(), out choice))
                     Console.WriteLine("Invalid selection, try again.");
@@ -48,7 +51,16 @@ namespace Part_6___Loops
                     case 6:
                         forQuestion6();
                         break;
-                    default:
+                    case 7:
+                        whileQuestion1();
+                        break;
+                    case 8:
+                        whileQuestion2();
+                        break;
+                    case 10:
+                        Console.WriteLine("Thanks for participating");
+                        break;
+                    default:    //This is like the else part of an if/else..if block
                         Console.WriteLine("Invalid Selection");
                         break;
                 }
@@ -144,6 +156,32 @@ namespace Part_6___Loops
                     numEven += 1;
             }
             Console.WriteLine($"You entered {numEven}");
+        }
+
+        public static void whileQuestion1()
+        {
+            int selection;
+            Console.WriteLine("Select your favourite ninja turtle:");
+            do
+            {
+                Console.WriteLine("1 - Donatello");
+                Console.WriteLine("2 - Mecalleango");
+                Console.WriteLine("3 - Leonardo");
+                Console.WriteLine("4 - Raphael");
+                while (!Int32.TryParse(Console.ReadLine(), out selection))
+                    Console.WriteLine("Invalid input, enter an integer:");
+                if (selection != 1)
+                    Console.WriteLine("Good choice but no.");
+            } while (selection != 1);
+            Console.WriteLine("Wise choice my friend.");
+        }
+
+        public static void whileQuestion2()
+        {
+            int age;
+            Console.WriteLine("Please enter your age:");
+            while (Int32.TryParse(Console.ReadLine(), out age) && age > 0)
+                Console.WriteLine("Invalid age, try again:");
         }
 
     }
