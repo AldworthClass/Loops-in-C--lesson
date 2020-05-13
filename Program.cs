@@ -34,28 +34,28 @@ namespace Part_6___Loops
                 switch (choice)
                 {
                     case 1:
-                        forQuestion1();
+                        ForQuestion1();
                         break;
                     case 2:
-                        forQuestion2Sol1();
+                        ForQuestion2Sol1();
                         break;
                     case 3:
-                        forQuestion3();
+                        ForQuestion3();
                         break;
                     case 4:
-                        forQuestion4();
+                        ForQuestion4();
                         break;
                     case 5:
-                        forQuestion5();
+                        ForQuestion5();
                         break;
                     case 6:
-                        forQuestion6();
+                        ForQuestion6();
                         break;
                     case 7:
-                        whileQuestion1();
+                        WhileQuestion1();
                         break;
                     case 8:
-                        whileQuestion2();
+                        WhileQuestion2();
                         break;
                     case 10:
                         Console.WriteLine("Thanks for participating");
@@ -70,7 +70,7 @@ namespace Part_6___Loops
             } while (choice != 10);
         }
 
-        public static void forQuestion1()
+        public static void ForQuestion1()
         {
             Console.WriteLine("Question 1");
             Console.WriteLine("");
@@ -81,7 +81,7 @@ namespace Part_6___Loops
             Console.WriteLine("");
         }
 
-        public static void forQuestion2Sol1()
+        public static void ForQuestion2Sol1()
         {
             Console.WriteLine("Question 2 Solution 1");
             Console.WriteLine("");
@@ -91,7 +91,7 @@ namespace Part_6___Loops
             }
         }
 
-        public static void forQuestion2Sol2()
+        public static void ForQuestion2Sol2()
         {
             Console.WriteLine("Question 2 Solution 2");
             Console.WriteLine("");
@@ -101,7 +101,7 @@ namespace Part_6___Loops
             }
         }
 
-        public static void forQuestion3()
+        public static void ForQuestion3()
         {
             Console.WriteLine("Question 3");
             Console.WriteLine("");
@@ -111,7 +111,7 @@ namespace Part_6___Loops
             }
         }
 
-        public static void forQuestion4()
+        public static void ForQuestion4()
         {
             int evenSum = 0;
             int oddSum = 0;
@@ -131,7 +131,7 @@ namespace Part_6___Loops
             Console.WriteLine($"Sum of odd numbers: {oddSum}");
             Console.WriteLine($"Sum of even numbers: {evenSum}");
         }
-        public static void forQuestion5()
+        public static void ForQuestion5()
         {
             // 5! = 5 x 4 x 3 x 2 x 1
             int factorial = 1;
@@ -142,7 +142,7 @@ namespace Part_6___Loops
             Console.WriteLine($"5! = {factorial}");
         }
 
-        public static void forQuestion6()
+        public static void ForQuestion6()
         {
             int numEven = 0;
             int input;
@@ -158,7 +158,7 @@ namespace Part_6___Loops
             Console.WriteLine($"You entered {numEven}");
         }
 
-        public static void whileQuestion1()
+        public static void WhileQuestion1()
         {
             int selection;
             Console.WriteLine("Select your favourite ninja turtle:");
@@ -180,7 +180,7 @@ namespace Part_6___Loops
             Console.WriteLine("Wise choice my friend.");
         }
 
-        public static void whileQuestion2()
+        public static void WhileQuestion2()
         {
             int age;
             Console.WriteLine("Please enter your age:");
