@@ -70,6 +70,7 @@ namespace Part_6___Loops
             } while (choice != 10);
         }
 
+        // Display numbers 1-10 formatted (1, 2, ... 10)
         public static void ForQuestion1()
         {
             Console.WriteLine("Question 1");
@@ -81,6 +82,7 @@ namespace Part_6___Loops
             Console.WriteLine("");
         }
 
+        // Display numbers from 5 to 50 solution 1
         public static void ForQuestion2Sol1()
         {
             Console.WriteLine("Question 2 Solution 1");
@@ -91,6 +93,7 @@ namespace Part_6___Loops
             }
         }
 
+        // // Display numbers from 5 to 50 solution 2
         public static void ForQuestion2Sol2()
         {
             Console.WriteLine("Question 2 Solution 2");
@@ -101,6 +104,7 @@ namespace Part_6___Loops
             }
         }
 
+        // Display numbers from 99-50
         public static void ForQuestion3()
         {
             Console.WriteLine("Question 3");
@@ -111,6 +115,7 @@ namespace Part_6___Loops
             }
         }
 
+        // Calculate sum of odd/even numbers from 20-40
         public static void ForQuestion4()
         {
             int evenSum = 0;
@@ -131,6 +136,8 @@ namespace Part_6___Loops
             Console.WriteLine($"Sum of odd numbers: {oddSum}");
             Console.WriteLine($"Sum of even numbers: {evenSum}");
         }
+
+        // Use loop to calculate 5!
         public static void ForQuestion5()
         {
             // 5! = 5 x 4 x 3 x 2 x 1
@@ -142,6 +149,7 @@ namespace Part_6___Loops
             Console.WriteLine($"5! = {factorial}");
         }
 
+        // Count how many of 10 entered numbers are even
         public static void ForQuestion6()
         {
             int numEven = 0;
@@ -158,6 +166,7 @@ namespace Part_6___Loops
             Console.WriteLine($"You entered {numEven}");
         }
 
+        // Select favourite ninja turtle
         public static void WhileQuestion1()
         {
             int selection;
@@ -180,6 +189,7 @@ namespace Part_6___Loops
             Console.WriteLine("Wise choice my friend.");
         }
 
+        // Valid age verification
         public static void WhileQuestion2()
         {
             int age;
